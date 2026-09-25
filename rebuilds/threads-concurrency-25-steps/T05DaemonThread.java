@@ -9,7 +9,7 @@ public class T05DaemonThread{
         heartbeat.start();
         System.out.println("daemon " + heartbeat.isDaemon());
         System.out.println("inherits " + new Thread(() -> {}).isDaemon());
-        Thread worker = new Thread(() -> System.out.println("worker"), "worker");
+        Thread worker = new Thread(() -> System.out.println("worker"  ), "worker");
         worker.start();
         worker.join();
         try{
