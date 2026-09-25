@@ -1,5 +1,5 @@
 public class T11SynchronizedBlock{
-    static final Stats{
+    static class Stats{
         private final Object lock = new Object();
         private int count;
         private long sum;
